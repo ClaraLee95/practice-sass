@@ -35,6 +35,10 @@
         line-height: inherit;
         line-height: initial;
         line-height: unset;
+- icon 
+    -> hover color not fill
+    
+******************************************************************************************************************************
 - &.lg-heading
     -> if you code as below, you are specifying nested class 'lg-heading' inside h1, h2, or h3
        (ex)     h1, h2, h3 {
@@ -44,10 +48,6 @@
                 }
     -> however, .lg-heading class is NOT nested class, it is the class of h1
     -> therefore, you should do &.lg-heading 
-- icon 
-    -> hover color not fill
-    
-******************************************************************************************************************************
 - rgba(lighten()) 
     -> https://sass-lang.com/documentation/modules/color
     -> makes color lighter
@@ -56,3 +56,34 @@
     -> The z-index CSS property sets the z-order of a positioned element and its descendants or flex items. 
        Overlapping elements with a larger z-index cover those with a smaller one.
 ******************************************************************************************************************************
+
+
+
+
+
+
+/3
+- @mixin
+    -> like creating your own function
+    -> to avoid repetition, you create your own mixins
+    -> to use mixin: [@include {name of mixin}();]
+    -> USE VARIABLES AND MIXINS to avoid repetition
+- @if
+    -> @if $dir == up {
+        } @else if $dir == down {
+
+        } @else {
+            
+        }
+- index.html home main background
+    -> background: $home-image;
+       background-attachment: fixed;
+       background-size: cover;
+- pseudo-element   
+    -> instead of creating empty <div> with class, use &:after or &:before 
+    -> &:after {
+        content: "";
+        //rest of rules
+      }
+- migrate variables and maxins into partial scss file
+    -> partial scss files must be named _{name}.scss
