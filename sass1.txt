@@ -4,9 +4,55 @@
 - index.html
     -> designed with header/main
     -> nav, li, a ....
+- font awesome
+    -> https://fontawesome.com/how-to-use/customizing-wordpress/snippets/setup-cdn-webfont
+    -> <i class="fab fa-{icon name} fa-{icon size}">
+    -> (ex) <i class="fab fa-github fa-2x"></i>
 
 
 
 
 /2
-- 
+- [box-sizing: border-box]
+    -> https://www.w3schools.com/css/css3_box-sizing.asp
+    -> The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+- [line-height]
+    -> https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
+    -> used to set the distance between lines of text
+    ->  /* Keyword value */
+        line-height: normal;
+
+        /* Unitless values: use this number multiplied by the element's font size */
+        line-height: 3.5;
+
+        /* <length> values */
+        line-height: 3em;
+
+        /* <percentage> values */
+        line-height: 34%;
+
+        /* Global values */
+        line-height: inherit;
+        line-height: initial;
+        line-height: unset;
+- &.lg-heading
+    -> if you code as below, you are specifying nested class 'lg-heading' inside h1, h2, or h3
+       (ex)     h1, h2, h3 {
+                    .lg-heading {
+                        (...)
+                    }
+                }
+    -> however, .lg-heading class is NOT nested class, it is the class of h1
+    -> therefore, you should do &.lg-heading 
+- icon 
+    -> hover color not fill
+    
+******************************************************************************************************************************
+- rgba(lighten()) 
+    -> https://sass-lang.com/documentation/modules/color
+    -> makes color lighter
+- z-index  
+    -> https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+    -> The z-index CSS property sets the z-order of a positioned element and its descendants or flex items. 
+       Overlapping elements with a larger z-index cover those with a smaller one.
+******************************************************************************************************************************
