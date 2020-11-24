@@ -71,9 +71,7 @@
 - @if
     -> @if $dir == up {
         } @else if $dir == down {
-
         } @else {
-            
         }
 - index.html home main background
     -> background: $home-image;
@@ -87,3 +85,4 @@
       }
 - migrate variables and maxins into partial scss file
     -> partial scss files must be named _{name}.scss
+    -> @import '{name}';
