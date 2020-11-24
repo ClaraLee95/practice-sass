@@ -1,0 +1,23 @@
+{
+  "name": "practice-sass",
+  "version": "1.0.0",
+  "description": "sass practice (portfolio website)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hello\"",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaraLee95/practice-sass.git"
+  },
+  "author": "Hyun Ji Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaraLee95/practice-sass/issues"
+  },
+  "homepage": "https://github.com/ClaraLee95/practice-sass#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

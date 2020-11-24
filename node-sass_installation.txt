@@ -1,0 +1,62 @@
+* Node-sass = http://zetcode.com/javascript/nodesass/
+* key [ ^ ` ] = opens terminal 
+
+######################################################################################################################
+(1) Start NPM
+- Terminal 
+    -> enter command [npm init] and enter all info
+    -> [npm init] can be used to set up a new or existing npm package
+- package.json file will be created
+    -> JSON file with key-value pairs related to the NPM project
+    -> https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/#:~:text=All%20npm%20packages%20contain%20a,as%20handle%20the%20project's%20dependencies.     
+       [ All npm packages contain a file, usually in the project root, called package.json 
+         this file holds various metadata relevant to the project. 
+         This file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies.]
+
+
+
+######################################################################################################################
+(2) Install node-sass
+- Terminal
+    -> [npm install node-sass]
+    -> creates 'node_modules' folder
+    -> will NOT be delolyed to server, just stays within the folder
+- Node-sass
+    -> Node-sass is a library that provides binding for Node. js to LibSass, 
+       the C version of the popular stylesheet preprocessor, Sass. 
+       It allows you to natively compile .scss files to css at incredible speed and automatically via a connect middleware.
+    -> https://www.npmjs.com/package/node-sass
+
+
+
+######################################################################################################################
+(3) Test NPM installation
+- from package.json, "script"
+    -> "scripts": {"test": "echo \"Hello\""}
+    -> script = content that will be run with the [npm run ...] command
+    -> test = name of the script
+    -> echo... = returns "Hello"
+- Terminal
+    -> [npm run test]
+    -> "test" is just the name of the script
+    -> can be ANYTHING
+
+
+
+######################################################################################################################
+(4) Update package.json 
+- from "script"
+    -> "scripts": {
+                    "test": "echo \"Hello\"",
+                    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+                  },
+- "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    -> "sass" = name of script
+    -> "node-sass" = specifying which module to run the script
+    -> "-w" = watch the directory
+    -> "-w scss/" = directory that will be watched
+    -> "-o" = output compiled sass (from sass to CSS)
+    -> "-o dist/css/" = directory that compiled output will be put
+    -> "--recursive" = resolve partials and auto-reload issues
+    -> watch & output
+        => node-sass will read from -w directory and copy & output this into -o directory
