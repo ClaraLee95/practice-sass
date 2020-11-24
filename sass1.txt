@@ -1,0 +1,12 @@
+/1
+- variables in main.css
+- .gitignore file created to NOT push node_modules folder
+- index.html
+    -> designed with header/main
+    -> nav, li, a ....
+
+
+
+
+/2
+- 
